@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Slider</title>
+</head>
+<body>
+    <section class="slider-container">
+    <!-- Images -->
+        <div class="slides-div fade">
+            <img src="./img1.jpg" alt="img-1" class="img" id="img-1">
+        </div>
+        <div class="slides-div fade">
+            <img src="./img2.png" alt="img-2" class="img" id="img-2">
+        </div>
+        <div class="slides-div fade">
+            <img src="./img3.jpg" alt="img-3" class="img" id="img-3">
+        </div>
+        <div class="slides-div fade">
+            <img src="./img4.jpg" alt="img-4" class="img" id="img-4">
+        </div>
+
+    <!-- Next & Previous btn -->
+        <div class="prev-next-container">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+    <!-- Nav dots -->
+        <div class="dots-container">
+            <span class="dot" id="dot-1" onclick="currentSlide(1)"></span>
+            <span class="dot" id="dot-2" onclick="currentSlide(2)"></span>
+            <span class="dot" id="dot-3" onclick="currentSlide(3)"></span>
+            <span class="dot" id="dot-4" onclick="currentSlide(4)"></span>
+        </div>
+
+    </section>
+
+<!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
