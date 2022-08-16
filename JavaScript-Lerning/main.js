@@ -1,3 +1,5 @@
+// *****************  Functions  *****************
+
 // const sum = (a, b) => a + b;
 
 // function percentCalculate(number, percent) {
@@ -42,3 +44,42 @@
 
 
 
+// *****************  loops  *****************
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(i, fruits[i]);
+// }
+
+
+
+// let double = (numbers) => {
+//     let result = [];
+//     for (let number of numbers) {
+//         result.push(number * 2);
+//     }
+//     return result;
+// }
+// console.log(double([1,2,3,4,5,6]));
+
+
+
+// let howManyLetters = (phrase) => {
+//     let result = 0;
+//     for (let index in phrase) {
+//         console.log(Number(index) + 1);
+//         result = Number(index) + 1;
+//     }
+//     return {result};
+// }
+// console.log(howManyLetters('LOVE'));
+
+
+
+let sumArray = (numbers) => {
+    let result = 0;
+    for (let number of numbers) {
+        console.log(number);
+        
+    }
+    return {result};
+}
+console.log(sumArray([1,2,3]))
