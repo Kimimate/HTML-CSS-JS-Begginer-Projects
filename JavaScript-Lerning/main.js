@@ -74,12 +74,15 @@
 
 
 
-let sumArray = (numbers) => {
-    let result = 0;
-    for (let number of numbers) {
-        console.log(number);
-        
-    }
-    return {result};
-}
-console.log(sumArray([1,2,3]))
+// let sumArray = (numbers) => {
+//     let result = 0;
+//     for (let number of numbers) {
+//         console.log(number);
+//         result = result + number;
+//     }
+//     return {result};
+// }
+// console.log(sumArray([1,2,3]))
+
+
+
