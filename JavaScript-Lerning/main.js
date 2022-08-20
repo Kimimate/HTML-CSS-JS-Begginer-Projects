@@ -86,3 +86,68 @@
 
 
 
+// const max = (numbers) => {
+//     let result = numbers[0];
+//     for (const number of numbers) {
+//         if (number > result) {
+//             result = number;
+//         }
+//     }
+//     return { result };
+// }
+// console.log(max([1, 2, 3, 4, 1, 30]));
+
+
+
+// const max = (numbers) => {
+//     let result = Math.max(...numbers);
+//     return result;
+// }
+// console.log(max([1, 2, 3, 4, 1, 30]));
+
+
+
+// const letterFrequency = (phrase) => {
+//     // console.log(phrase);
+//     let letters = {};
+//     for (let letter of phrase) {
+//         if (letter in letters) {
+//             letters[letter] += 1;
+//         } else {
+//             letters[letter] = 1;
+//         }
+//     }
+//     return letters;
+// }
+// console.log(letterFrequency('hahant'));
+
+
+
+// const wordFrequency = (phrase) => {
+//     console.log(phrase);
+//     let array = phrase.split(' ');
+//     // console.log(array);
+//     let words = {};
+//     for (let word of array) {
+//         if (word in words) {
+//             words[word] += 1;
+//         } else {
+//             words[word] = 1;
+//         }
+//     }
+//     return words;
+// }
+// console.log(wordFrequency("i don't want to lose you you"));
+
+
+
+// const wordFrequency = (phrase) => {
+//     const words = phrase.split(' ');
+//     console.log(words);
+//     return letterFrequency(words);
+// }
+// console.log(wordFrequency('let me in'));
+
+
+
+
