@@ -45,6 +45,7 @@
 
 
 // *****************  loops  *****************
+
 // for (let i = 0; i < fruits.length; i++) {
 //     console.log(i, fruits[i]);
 // }
@@ -150,4 +151,50 @@
 
 
 
+// *****************  Array Methods  *****************
 
+// const doubleMap = (numbers) => {
+//     return console.log(numbers.map(number => number * 2));
+// }
+// doubleMap([1,2,3]);
+
+
+
+// const filter = (numbers, greaterThan) => {
+//     return console.log(numbers.filter(number => number > greaterThan));
+// }
+// filter([1, 2, 3, 4, 5, 6], 3);
+
+
+
+// const actors = [
+//     {name: 'Jonnny', netWorth: 200000},
+//     {name: 'Amber', netWorth: 10},
+//     {name: 'Leonardo', netWorth: 1000000},
+//     {name: 'George', netWorth: 50000000},
+//     {name: 'Amitabh ', netWorth: 4500000},
+//     {name: 'Robert', netWorth: 3000000}
+// ]
+// let result = actors.filter(actor => actor.netWorth > 10 && actor.netWorth < 50000000);
+// console.log(result);
+// let names = result.map(actor => actor.name).join(', ');
+// document.write(`<h1>${names}</h1>`);
+
+
+
+// let nums = [1, 2, 3, 4];
+// const result = nums.reduce((a, b) => a * b);
+// console.log(result);
+
+
+
+// const actors = [
+//     {name: 'Jonnny', netWorth: 200000},
+//     {name: 'Amber', netWorth: 10},
+//     {name: 'Leonardo', netWorth: 1000000},
+//     {name: 'George', netWorth: 50000000},
+//     {name: 'Amitabh ', netWorth: 4500000},
+//     {name: 'Robert', netWorth: 3000000}
+// ]
+// const sumNetWorth = actors.reduce((a, b) => a + b.netWorth, 0);
+// console.log(sumNetWorth);
