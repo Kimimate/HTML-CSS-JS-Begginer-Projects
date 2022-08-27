@@ -220,14 +220,30 @@
 // DivTitle.style.backgroundColor = '#000'
 
 
+
+
+// let titleDiv = document.getElementById('title');
+// let redDiv = document.getElementById('one');
+// let yellowDiv = document.getElementById('two');
+// let grayDiv = document.getElementById('three');
+
+// redDiv.onclick = () => titleDiv.style.color = 'red';
+// yellowDiv.onclick = () => titleDiv.style.color = 'yellow';
+// grayDiv.onclick = () => titleDiv.style.color = 'gray';
+
+
+
 let titleDiv = document.getElementById('title');
-let redDiv = document.getElementById('one');
-let yellowDiv = document.getElementById('two');
-let grayDiv = document.getElementById('three');
-
-redDiv.onclick = () => titleDiv.style.color = 'red';
-yellowDiv.onclick = () => titleDiv.style.color = 'yellow';
-grayDiv.onclick = () => titleDiv.style.color = 'gray';
-
+const colors = document.querySelectorAll('.colorBtn');
+const timeClicked = {'red': 0,'yellow': 0,'gray': 0}
+colors.forEach(colors => {
+    
+    colors.onclick = () => {
+        titleDiv.style.color = colors.value;
+        timeClicked[colors.value] += 1;
+        colors.innerText = timeClicked[colors.value];
+    }
+});
+    
 
 
