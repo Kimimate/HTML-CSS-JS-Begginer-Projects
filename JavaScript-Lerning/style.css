@@ -1,0 +1,39 @@
+* {
+    background: darkslategrey;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.btnContainer {
+    width: 350px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.colorBtn {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+.colorBtn:hover {
+    box-shadow: 0 0 10px white;
+}
+
+#title {color: white;}
+#one {background: red;}
+#two {background: yellow;}
+#three {background: gray;}

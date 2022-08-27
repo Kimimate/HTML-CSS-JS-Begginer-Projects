@@ -198,3 +198,36 @@
 // ]
 // const sumNetWorth = actors.reduce((a, b) => a + b.netWorth, 0);
 // console.log(sumNetWorth);
+
+
+
+// *****************  DOM Manipulation  *****************
+
+// console.log('hello');
+
+// let DivTitle = document.getElementById('title');
+// console.log('before: ',DivTitle.innerText);
+
+// let messege = 'Hi Kimimate';
+// DivTitle.innerText = messege;
+
+// DivTitle.innerText = 'sleep well sweety';
+// console.log('after: ',DivTitle.innerText);
+
+// DivTitle.innerHTML = `<p>${messege}</p>`;
+
+// DivTitle.style.color = '#fff';
+// DivTitle.style.backgroundColor = '#000'
+
+
+let titleDiv = document.getElementById('title');
+let redDiv = document.getElementById('one');
+let yellowDiv = document.getElementById('two');
+let grayDiv = document.getElementById('three');
+
+redDiv.onclick = () => titleDiv.style.color = 'red';
+yellowDiv.onclick = () => titleDiv.style.color = 'yellow';
+grayDiv.onclick = () => titleDiv.style.color = 'gray';
+
+
+
