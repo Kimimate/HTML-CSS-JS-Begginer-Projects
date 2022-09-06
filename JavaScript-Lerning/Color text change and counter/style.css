@@ -1,9 +1,12 @@
 * {
-    background: darkslategrey;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
+}
+
+body {
+    background: darkslategrey;
 }
 
 .main {
@@ -27,6 +30,7 @@
     height: 100px;
     width: 100px;
     border: 2px solid black;
+    cursor: pointer;
 }
 
 .colorBtn:hover {
@@ -37,3 +41,9 @@
 #one {background: red;}
 #two {background: yellow;}
 #three {background: gray;}
+
+#clearBtn {
+    cursor: pointer; 
+    width: 60px;
+    height: 30px;
+}
