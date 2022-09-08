@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>Total Tip Calculator</title>
+</head>
+
+<body>
+    <main class="container">
+<!-- TITLE -->
+        <div class="title">
+            <h1>Total Tip Calculator</h1>
+        </div>
+<!-- FORM -->
+        <form action="calculate" method="post">
+            <h2>Bill total</h2>
+            <div class="inputDiv">
+                <span>$</span>
+                <input type="text" name="bill" id="billTotalInput" placeholder="0.00">
+            </div>
+            <h2>Tip</h2>
+            <div class="inputDiv">
+                <span>%</span>
+                <input type="text" name="tip" id="tipInput" placeholder="10">
+            </div>
+            
+        </form>
+<!-- BOTTOM -->
+        <div class="bottom">
+            <div class="people">
+                <h3>People</h3>
+                <div class="button">
+                    <button id="minus">
+                        <span>-</span>
+                    </button>
+                    <span id="numberPlace">1</span>
+                    <button id="plus">
+                        <span>+</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="perPersonTotalDiv">
+                <h3>Total per Person</h3>
+                <span id="perPersonTotal">$0.00</span>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

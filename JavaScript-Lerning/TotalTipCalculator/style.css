@@ -1,0 +1,96 @@
+/* Page Colors */
+.color1 {color: #f1c47d;}
+.color2 {color: #f3de86;}
+.color3 {color: #144a83;}
+.color4 {color: #158a8d;}
+.color5 {color: #5bd9b7;}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    /* border: 1px solid red; */
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to left, #5bd9b7, #f1c47d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 475px;
+    width: 325px;
+    background: #122c07;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 15px;
+    border-radius: 1rem;
+    gap: 1.2rem;
+}
+
+/* TITLE */
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* FORM */
+form {
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+.inputDiv {
+    border-radius: 1.4rem;
+    background: #12613d;
+    display: flex;
+    align-items: center;
+    padding-inline-start: 0.5rem;
+    margin: 0.2rem 0 1rem 0;
+    
+}
+
+input {
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0 0.1rem;
+}
+
+/* BOTTOM */
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+}
+.button span, #perPersonTotal {
+    font-size: 1.3rem;
+}
+
+#minus, #plus {
+    
+    
+}
