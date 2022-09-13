@@ -23,12 +23,12 @@
             <h2>Bill total</h2>
             <div class="inputDiv">
                 <span>$</span>
-                <input type="text" name="bill" id="billTotalInput" placeholder="0.00">
+                <input type="text" name="bill" id="billTotalInput" placeholder="0.00" onkeyup="calculateBill()">
             </div>
             <h2>Tip</h2>
             <div class="inputDiv">
                 <span>%</span>
-                <input type="text" name="tip" id="tipInput" placeholder="10">
+                <input type="text" name="tip" id="tipInput" placeholder="10" onkeyup="calculateBill()">
             </div>
             
         </form>
@@ -37,9 +37,9 @@
             <div class="people">
                 <h3>People</h3>
                 <div class="button">
-                    <span id="minus">-</span>
-                    <span id="numberPlace">1</span>
-                    <span id="plus">+</span>
+                    <span id="minus" onclick="decreasePeople()">-</span>
+                    <span id="numberOfPeople">1</span>
+                    <span id="plus" onclick="increasePeople()">+</span>
                 </div>
             </div>
 
@@ -49,6 +49,7 @@
             </div>
         </div>
     </main>
+    <script type="text/javascript" src="./main.js"></script>
 </body>
 
 </html>
