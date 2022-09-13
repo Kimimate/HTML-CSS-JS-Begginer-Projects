@@ -83,14 +83,32 @@ h3 {
 }
 
 .button {
+    height: auto;
+    width: auto;
     display: flex;
     justify-content: space-around;
-}
-.button span, #perPersonTotal {
     font-size: 1.3rem;
 }
 
 #minus, #plus {
-    
-    
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #12613d;
+    cursor: pointer;
+}
+
+#numberPlace {
+    padding: 0 10px;
+    font-size: 1.5rem;
+}
+
+.button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#perPersonTotal {
+    font-size: 1.5rem;
 }
