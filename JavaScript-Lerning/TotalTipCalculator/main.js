@@ -9,11 +9,20 @@ const calculateBill = () => {
     const bill = Number(billTotalInput.value);
     const tip = Number(tipInput.value / 100);
     const total = (bill + (bill * tip)) / people;
-    perPersonTotal.innerText = `$${total.toLocaleString('en-US')}`;
+    perPersonTotal.innerText = `$${total.toFixed(2)}`;
 }
 
-const decreasePeople = () => {}
+const decreasePeople = () => {
+    if (people <= 1) {
+        return;
+    }
+    people -= 1;
+    numberOfPeople.innerText = people;
+    calculateBill();
+}
 
 const increasePeople = () => {
-    
+    people += 1;
+    numberOfPeople.innerText = people;
+    calculateBill();
 }
