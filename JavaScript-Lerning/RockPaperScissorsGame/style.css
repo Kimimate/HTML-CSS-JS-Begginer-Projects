@@ -70,3 +70,14 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+#reset {
+    height: 70px;
+    width: 70px;;
+    margin: 10px;
+    border-radius: 20%;
+    border: 3px outset #9d4edd;
+    background-color: #3c096c;
+    color: #fff;
+    cursor: pointer;
+}

@@ -1,14 +1,40 @@
 // ** getComputerChoice randomly selects between `rock` `paper` `scissors` and returns that string **
-function computerChoice() {
+function fComputerChoice() {
     let rpsChoice = ['Rock','Paper','Scissors'];
     let randomChoice = Math.floor(Math.random() * rpsChoice.length);
     return rpsChoice[randomChoice];
 }
+// 
+// 
+// 
+// ** Make the RPS buttons actively listen for a click and do something once a click is detected **
+function fPlayGame() {
+    let rpsButtons = document.querySelectorAll('.rpsButton');
+    console.log(rpsButtons);
 
+    rpsButtons.forEach(rpsButton => {
+        rpsButton.onclick = () => fOnClickRPS(rpsButton.value);
+    })
 
-
+    let reset = document.getElementById('reset');
+    reset.onclick = () => fRestart();
+}
+// 
+// 
+// 
+// ** Calculate who won and show it on the screen **
+function fOnClickRPS(playerChoice) {
+    const computerChoice = fComputerChoice();
+    const score = fResult(playerChoice, computerChoice);
+    fShowResults(score, playerChoice, computerChoice)
+    console.log({computerChoice});
+    console.log({playerChoice});
+}
+// 
+// 
+// 
 // ** getResult compares playerChoice & computerChoice and returns the score accordingly **
-function result(playerChoice, computerChoice) {
+function fResult(playerChoice, computerChoice) {
     let score;
 
     if (playerChoice == computerChoice) {
@@ -22,15 +48,18 @@ function result(playerChoice, computerChoice) {
     } else {
         score = -1;
     }
-
-    return score
+    
+    return score;
 }
-
-
-
+// 
+// 
+// 
 // ** showResult updates the DOM to `You Win!` or `You Lose!` or `It's a Draw!` based on the score. Also shows Player Choice vs. Computer Choice**
-function showResults(score, playerChoice, computerChoice) {
+function fShowResults(score, playerChoice, computerChoice) {
     let result = document.getElementById('result');
+    let playerscore = document.getElementById('score');
+    let hands = document.getElementById('hands');
+
     switch (score) {
         case -1:
             result.innerText = 'You Lose!';
@@ -41,35 +70,24 @@ function showResults(score, playerChoice, computerChoice) {
         case 0:
             result.innerText = 'Draw!';
     }
-    let playerscore = document.getElementById('score');
-    let hands = document.getElementById('hands');
+    
     playerscore.innerText = `${Number(playerscore.innerText) + score}`;
     hands.innerText = `${playerChoice} VS ${computerChoice}`;
 }
-
-
-
-// ** Calculate who won and show it on the screen **
-function onClickRPS(playerChoice) {
-    const computerChoice = computerChoice();
-    const score = result(playerChoice.value, computerChoice);
-    showResults(score, playerChoice.value, computerChoice)
-}
-
-
-
-// ** Make the RPS buttons actively listen for a click and do something once a click is detected **
-function playGame() {
-    let rpsButtons = document.querySelectorAll('.rpsButton');
-
-    rpsButtons.forEach(rpsButton => {
-        rpsButton.onclick = () => onClickRPS(rpsButton)
-    })
-}
-
-
-
+// 
+// 
+// 
 // ** endGame function clears all the text on the DOM **
-function restart() {
-
+function fRestart() {
+    let result = document.getElementById('result');
+    let playerscore = document.getElementById('score');
+    let hands = document.getElementById('hands');
+    result.innerText = '';
+    playerscore.innerText = '';
+    hands.innerText = '';
 }
+// 
+// 
+// 
+fPlayGame();
+
