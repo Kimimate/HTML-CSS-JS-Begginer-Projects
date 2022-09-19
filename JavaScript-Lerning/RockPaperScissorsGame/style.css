@@ -16,7 +16,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .container {
@@ -32,7 +31,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .rpsButton {
@@ -43,7 +41,7 @@ body {
     border: 3px outset #9d4edd;
     background-color: #3c096c;
     color: #fff;
-
+    cursor: pointer;
 }
 
 /* txtContainer */
@@ -53,7 +51,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+}
 
+#score, #hands, #result {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* resetContainer */
@@ -63,5 +69,4 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
