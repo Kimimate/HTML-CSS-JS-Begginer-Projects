@@ -11,3 +11,4 @@ Color Text Change And Counter - https://kimimate.github.io/HTML-CSS-JS-Begginer-
 Total Tip Calculator - https://kimimate.github.io/HTML-CSS-JS-Begginer-Projects/JavaScript-Lerning/TotalTipCalculator/index.html#
 
 
+Rock Paper Scissors Game - https://kimimate.github.io/HTML-CSS-JS-Begginer-Projects/JavaScript-Lerning/RockPaperScissorsGame/index.html#
