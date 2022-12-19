@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(22, 112, 67, 0.651);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dog {
+    height: auto;
+    width: auto;
+    object-position: center;
+    object-fit: contain;
+}
